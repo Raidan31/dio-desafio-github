@@ -1,0 +1,99 @@
+Comandos Terminal GitBash
+
+Clear: Limpa a tela
+
+TAB: Completar caso tenha uma pasta com as iniciais que tenha sido digitadas
+
+MKDIR: Cria Pastas
+
+Echo: Printa no terminal algo que tenha sido escrito
+
+del: Deleta apenas os arquivos presentes na pasta. Não deleta a pasta.
+
+RMDIR: Deleta a pasta
+ex: rmdir "nome da pasta" /s /q
+
+sha1: Serve pra encriptar a pasta, gerando uma string com 40 caracteres.
+
+ls: Gera uma lista de programas aparentes na pasta.
+
+ls -a: Mostra as pastas ocultas(Git init)
+
+git add "nome do arquivo": Adiciona um arquivo específico local a fase STAGED. 
+
+git add*: Adiciona todos os arquivos locais a fase STAGED.
+
+git commit -m: Pega todos os arquivos que estejam na fase STAGED e Commita, os envelopando em uma mensagem.
+
+git status: Informa os status dos arquivos(Untrackes, Tracked, Unmodified, Modified e Staged).
+
+git move: Comando para mover o arquivo.
+
+git config --list: Serve para verificar as configurações presentes no seu GitHub.
+
+git config --global --unset user.email //escrever o e-mail: Remove o e-mail registrado.
+
+git remote origin https: //colocar o https do github: Código utilizado para carregar os arquivos no github.
+
+git pull: Serve pra pegar as versões do GitHub do repositório remoto que não estejam presentes no repositório local.
+--------------------------------------------------------------------------------------------------------------------------
+
+Objetos do Git
+
+a)Blobs
+
+Os arquivos são guardados nos blob, é guardado a encriptação do arquivo, não é guardado os nomes do autor.
+
+b) Tree
+
+Armazena os blobs, as encriptações e os nomes dos arquivos. Dentro das trees é possivel armazenar outras trees. As trees
+tem uma encriptação própria.
+
+c) Commit
+
+É aquilo que da significado as operações, engloba tudo, as Tree, outros commits, o nome do autor, a mensagem e a data e
+hora registradas. Os commits tem seu próprio SHA1
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Chaves SSH e Tokens
+
+Chave SSH
+
+Estabelece conexão entre duas partes.
+- Comandos para a criação de chaves: 
+ssh - keygen -t ed 25519 -c email-
+eval $(ssh -agent -s)
+ssh -add id -ed 25519
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Comandos para a Configuração do GitHub
+
+git config --global user.email // coloca o e-mail que vai ser registrado aqui
+git config --global user.name // coloca o nome aqui
+
+---------------------------------------------------------------------------------------------------------------------------
+Ciclo de Vida do Github
+
+Os arquivos podem estar nas seguintes formas:
+
+a) Untracked: Não adicionados, assim não foram sendo rastreados pelo Git.
+
+b) Unmodfied: Vindos diretos do commit que não foram modificados.
+
+c) Modified: Editados após serem postados.
+
+d) Staged: Fase em que os arquivos estão se preparando para entrar no commit.
+
+// O reposotório local será composto por commits.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+  
+
+
+
+ 
+
+
