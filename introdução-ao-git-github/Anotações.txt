@@ -33,7 +33,7 @@ git config --list: Serve para verificar as configurações presentes no seu GitH
 
 git config --global --unset user.email //escrever o e-mail: Remove o e-mail registrado.
 
-git remote origin https: //colocar o https do github: Código utilizado para carregar os arquivos no github.
+git push origin main: Manda os arquivos adicionados no local para o github.
 
 git pull: Serve pra pegar as versões do GitHub do repositório remoto que não estejam presentes no repositório local.
 --------------------------------------------------------------------------------------------------------------------------
